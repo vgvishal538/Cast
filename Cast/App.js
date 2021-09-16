@@ -14,6 +14,7 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
+  LogBox,
   View,
 } from 'react-native';
 
@@ -22,6 +23,7 @@ import Home from './src/Home';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+  LogBox.ignoreAllLogs();
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,

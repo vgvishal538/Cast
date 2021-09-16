@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "187605378876",
+    "project_id": "cast-acac5",
+    "storage_bucket": "cast-acac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187605378876:android:b58b2f19f9243fdb25e039",
+        "android_client_info": {
+          "package_name": "com.cast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187605378876-oguooqnaqgt8p2k2g9ipkenjvh2tp3sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cast",
+            "certificate_hash": "65c28d71efbc55126d246392eb022b2832d35e03"
+          }
+        },
+        {
+          "client_id": "187605378876-6q6foaq4n36vulrt35dpnqp38djoohsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJxcQwwB6pf9dqOiwPmb5q_1efAX9ujVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187605378876-6q6foaq4n36vulrt35dpnqp38djoohsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

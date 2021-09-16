@@ -6,9 +6,12 @@ import {
   Text,
   TouchableOpacity,
   Linking,
+  StyleSheet,
   Alert,
+  Dimensions,
   BackHandler,
 } from 'react-native';
+import Video from 'react-native-video';
 import {CastButton, useRemoteMediaClient} from 'react-native-google-cast';
 
 function Home() {
@@ -24,12 +27,41 @@ function Home() {
     });
   }
   return (
-    <View>
+    <View style={{flexDirection: 'column'}}>
       <Text>Cast data</Text>
       <View style={{padding: 30}}>
-        <CastButton style={{width: 24, height: 24, tintColor: 'black'}} />
+        <CastButton
+          style={{margin: -12, width: 48, height: 48, tintColor: 'black'}}
+        />
       </View>
+      <Video
+        source={{
+          uri: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/CastVideos/mp4/BigBuckBunny.mp4',
+        }}
+        style={{
+          height: 280,
+          width: Dimensions.get('window').width,
+        }}
+        controls={true}
+        repeat={false}
+        allowsExternalPlayback={true}
+        currentPlaybackTime={true}
+        resizeMode={'contain'}
+        fullscreen={true}
+        ref={ref => {
+          this.player = ref;
+        }}
+      />
     </View>
   );
 }
+var styles = StyleSheet.create({
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+});
 export default Home;
